@@ -16,8 +16,7 @@ public class Book {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-
-  private long id;
+  private Long id;
   private String title;
   private String genre;
 
@@ -34,7 +33,7 @@ public class Book {
    * @param title the title
    * @param genre the genre
    */
-  public Book(long id, String title, String genre) {
+  public Book(Long id, String title, String genre) {
     this.id = id;
     this.title = title;
     this.genre = genre;
